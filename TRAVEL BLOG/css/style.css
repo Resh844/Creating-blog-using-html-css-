@@ -1,0 +1,100 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    color:#401b29;
+    }
+    .background{
+        background: rgb(219, 221, 237,1);
+    }
+    header{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+    }
+    header h1{
+        margin:0;
+        padding:15px;
+        color: #3e1532;
+        text-decoration:underline;
+    }
+    nav{
+        color:black
+    }
+    li{
+        list-style: none;
+        padding:10px;
+    }
+    ul{
+        padding:0;
+    }
+    .journey-image{
+        background: url(../images/mountain.jpg) no-repeat center center fixed;
+        min-height: 100vh;
+        background-size: cover;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .journey-text{
+        text-align: center;
+        font-size: 2em;
+        padding: 1.5em;
+        border-radius: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    article,.sidebar-widget{
+        padding: 15px;
+        margin: 15px 0;
+    }
+    article>header{
+        background: #d8d8d8;
+    }
+    img{
+        width:70%;
+    }
+    a:hover{
+        color:blue;
+    }
+    td:nth-child(2){
+        padding-left: 30px;;
+    }
+    @media (min-width: 1000px) {
+        body{
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        header{
+            flex-direction: row;
+        }
+        header li{
+            display: inline-block;
+        }
+        header h1,header nav{
+            flex:1;
+        }
+        header h1{
+            text-align: left;
+        }
+        header nav{
+            text-align: right;
+        }
+        .wrapper{
+            flex-direction: row;
+        }
+        main{
+            flex:3;
+        }
+        aside{
+            flex:1;
+            margin-left: 15px;
+        }
+        article>header{
+            justify-content: space-around;
+        }
+    }
